@@ -8,8 +8,8 @@ angular.module('prozo.rest',['xml'])
     $httpProvider.interceptors.push('xmlHttpInterceptor');
   })
   .constant('appConstants',{
-    'BASE_URL1':'http://stagingbiz.prozo.in/api/web/assignment/',
-    'BASE_URL':'http://localhost:8100/api/',
+    'BASE_URL':'http://stagingbiz.prozo.in/api/web/assignment/', //Comment this when running in the browser
+    //'BASE_URL':'http://localhost:8100/api/', //Uncomment this when running in browser
     'API_KEY':'45c40d5069839657a63c0ffaa69c605b',
     'CANDIDATE_ID':2060
   });
