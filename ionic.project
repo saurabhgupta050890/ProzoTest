@@ -1,0 +1,10 @@
+{
+  "name": "prozo",
+  "app_id": "",
+  "proxies": [
+      {
+        "path": "/api",
+        "proxyUrl": "http://stagingbiz.prozo.in/api/web/assignment/"
+      }
+      ]
+}

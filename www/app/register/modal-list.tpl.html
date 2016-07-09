@@ -1,0 +1,7 @@
+<ionic-modal-view>
+  <ion-content style="background-color: rgba(0,0,0,0.2)" ng-click="closeModal()">
+    <div class="card modal-card list list-borderless">
+      <div class="item"ng-click="closeModal($event,item)" ng-repeat="item in modalItems track by item.id"> {{item.name}} </div>
+    </div>
+  </ion-content>
+</ionic-modal-view>

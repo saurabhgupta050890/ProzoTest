@@ -1,0 +1,54 @@
+<ion-view view-title="Success"  hide-back-button="true">
+  <ion-content>
+    <div class="list list-borderless">
+      <div class="item item-icon-left">
+        <i class="icon ion-checkmark-circled balanced"></i>
+        <p style="font-size: larger;word-wrap: normal;white-space: normal"> The user below has been registered successfully </p>
+      </div>
+      <div class="item"></div>
+      <div class="item item-icon-left item-avatar">
+        <i class="icon ion-android-call"></i>
+        <h2> Mobile </h2>
+        <p style="font-size: larger;word-wrap: normal;white-space: normal"> {{::userData.phone}}</p>
+      </div>
+      <div class="item item-icon-left item-avatar">
+        <i class="icon ion-android-mail"></i>
+        <h2> Email </h2>
+        <p style="font-size: larger;word-wrap: normal;white-space: normal"> {{::userData.email}}</p>
+      </div>
+      <div class="item item-icon-left item-avatar">
+        <i class="icon ion-briefcase"></i>
+        <h2> Name of Business </h2>
+        <p style="font-size: larger;word-wrap: normal;white-space: normal"> {{::userData.business_name}}</p>
+      </div>
+      <div class="item item-icon-left item-avatar">
+        <i class="icon ion-android-map"></i>
+        <h2> Registered Office Address </h2>
+        <p style="font-size: larger;word-wrap: normal;white-space: normal"> {{::userData.address}}</p>
+      </div>
+      <div class="item item-icon-left item-avatar">
+        <i class="icon ion-android-pin"></i>
+        <h2> City </h2>
+        <p style="font-size: larger;word-wrap: normal;white-space: normal"> {{::userData.city.name}}</p>
+      </div>
+      <div class="item item-icon-left item-avatar">
+        <i class="icon fa fa-building-o"></i>
+        <h2> State </h2>
+        <p style="font-size: larger;word-wrap: normal;white-space: normal"> {{::userData.state.name}}
+      </div>
+      <div class="item item-icon-left item-avatar">
+        <i class="icon fa fa-home"></i>
+        <h2> PIN Code </h2>
+        <p style="font-size: larger;word-wrap: normal;white-space: normal"> {{::userData.pincode}}</p>
+      </div>
+      <div class="item item-icon-left item-avatar">
+        <i class="icon ion-card"></i>
+        <h2> PAN Number </h2>
+        <p style="font-size: larger;word-wrap: normal;white-space: normal"> {{::userData.pan | uppercase}}>
+      </div>
+      <div class="text-center" style="margin-top: 15px;margin-bottom: 15px">
+        <button class="button block-flat raised"> Go Home </button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
